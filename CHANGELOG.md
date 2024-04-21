@@ -1,5 +1,12 @@
 
 
+## [1.3.3](https://github.com/FDU-Family/dada-element/compare/v1.3.2...v1.3.3) (2024-04-21)
+
+
+### Features
+
+* 添加inputType ([e955de4](https://github.com/FDU-Family/dada-element/commit/e955de4d8cd5e568ded3a5a4c3f43a8e91d2c034))
+
 ## [1.3.2](https://github.com/FDU-Family/dada-element/compare/v1.3.1...v1.3.2) (2024-03-25)
 
 ## [1.3.1](https://github.com/FDU-Family/dada-element/compare/v1.3.0...v1.3.1) (2024-03-25)
