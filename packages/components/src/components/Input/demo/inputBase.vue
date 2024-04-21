@@ -16,7 +16,7 @@ function focusTest() {
 <template>
   <div>
     <div class="mt ml">
-      <DadaInput type="primary" border placeholder="测试一下onFocus" :keyboard="true" @on-focus="focusTest" />
+      <DadaInput type="primary" border placeholder="hello" inputType="nickname" :keyboard="true" @on-focus="focusTest" />
     </div>
     <div class="mt ml">
       <DadaInput shadow placeholder="不带shadow" :keyboard="true" />

@@ -76,6 +76,11 @@ const props = withDefaults(defineProps<{
    * 键盘弹起时，是否自动上推页面
    */
   keyboard: boolean
+
+  /**
+   * 输入框的类型
+   */
+  inputType: 'text' | 'number' | 'idcard' | 'digit' | 'safe-password' | 'nickname'
 }>(), {
   placeholder: '',
   shadow: false,
@@ -85,7 +90,7 @@ const props = withDefaults(defineProps<{
   maxlength: 140,
   type: 'default',
   block: false,
-  keyboard: false,
+  keyboard: true,
 })
 
 const emits = defineEmits<{
@@ -204,7 +209,7 @@ defineExpose({
       <input
         class="__dd-input" :class="classAry" :placeholder="placeholder" placeholder-class="__dd-input-placeholder"
         :value="value" :focus="isFocus" :password="props.password" :maxlength="props.maxlength" :disabled="props.disabled"
-        :adjust-position="props.keyboard" @input="inputHandle" @blur="blurHandle" @focus="focusHandle"
+        :adjust-position="props.keyboard" @input="inputHandle" @blur="blurHandle" @focus="focusHandle" :type="props.inputType"
       >
       <div class="__dd-input-slot suffix">
         <slot name="suffix" />
