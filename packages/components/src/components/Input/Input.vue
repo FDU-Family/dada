@@ -80,7 +80,7 @@ const props = withDefaults(defineProps<{
   /**
    * 输入框的类型
    */
-  inputType: 'text' | 'number' | 'idcard' | 'digit' | 'safe-password' | 'nickname'
+  inputType?: 'text' | 'number' | 'idcard' | 'digit' | 'safe-password' | 'nickname'
 }>(), {
   placeholder: '',
   shadow: false,
